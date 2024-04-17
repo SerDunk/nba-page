@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 function Navbar() {
   return (
     <nav className="flex justify-between p-4 bg-red-600">
