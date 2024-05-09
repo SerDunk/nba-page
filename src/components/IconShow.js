@@ -14,7 +14,7 @@ function IconShow({ icon, onHover, color, logo }) {
       onMouseLeave={handleMouseLeave}
       className="w-1/3 transition-transform duration-300 hover:scale-150 S"
     >
-      <img src={icon} alt="icon" />
+      <img src={icon} alt="icon" className="object-cover" />
     </div>
   );
 }

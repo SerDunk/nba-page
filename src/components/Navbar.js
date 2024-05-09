@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 function Navbar() {
   return (
-    <nav className="flex justify-between p-4 bg-red-600">
+    <nav className="flex justify-between p-4">
       <div className="ml-5">NBA</div>
       <ul className="flex mr-7 gap-5">
         <li>
