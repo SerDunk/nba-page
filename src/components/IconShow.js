@@ -1,12 +1,17 @@
 import nbaLogo from "../images/nba-logo.png";
+import { visibleContext } from "../context/visible";
+import { useContext } from "react";
 
 function IconShow({ icon, onHover, color, logo }) {
+  const { setVisible } = useContext(visibleContext);
   const handleMouseEnter = () => {
     onHover(logo, color);
+    setVisible(true);
   };
 
   const handleMouseLeave = () => {
     onHover(nbaLogo, "bg-red-500");
+    setVisible(false);
   };
   return (
     <div

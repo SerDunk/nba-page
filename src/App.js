@@ -59,7 +59,6 @@ function App() {
   const handleHover = (teamLogo, color) => {
     setTeam(teamLogo);
     setColor(color);
-    setVisible(true);
   };
   return (
     <div className={`min-h-screen ${color}`}>
