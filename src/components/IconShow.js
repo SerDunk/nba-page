@@ -2,11 +2,14 @@ import nbaLogo from "../images/nba-logo.png";
 import { visibleContext } from "../context/visible";
 import { useContext } from "react";
 
-function IconShow({ icon, onHover, color, logo }) {
-  const { setVisible } = useContext(visibleContext);
+function IconShow({ icon, onHover, color, logo, player }) {
+  const { setVisible, showStat, setSelectedPlayer } =
+    useContext(visibleContext);
   const handleMouseEnter = () => {
     onHover(logo, color);
     setVisible(true);
+    setSelectedPlayer(player);
+    showStat(player);
   };
 
   const handleMouseLeave = () => {

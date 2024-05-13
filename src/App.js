@@ -16,6 +16,7 @@ import { visibleContext } from "./context/visible";
 function App() {
   const icons = [
     {
+      id: 1,
       icon: Steph,
       Name: "Stephen Curry",
       color: "bg-blue-500",
@@ -25,6 +26,7 @@ function App() {
       RPG: "4.5",
     },
     {
+      id: 2,
       icon: Lebron,
       Name: "Lebron James",
       color: "bg-yellow-500",
@@ -34,6 +36,7 @@ function App() {
       RPG: "7.3",
     },
     {
+      id: 3,
       icon: Luka,
       Name: "Luka Doncic",
       color: "bg-green-700",
@@ -43,6 +46,7 @@ function App() {
       RPG: "9.2",
     },
     {
+      id: 4,
       icon: Jovic,
       Name: "Nikola Jokic",
       color: "bg-blue-900",
@@ -55,6 +59,18 @@ function App() {
   const [team, setTeam] = useState(logo);
   const [color, setColor] = useState("bg-red-600");
   const [visible, setVisible] = useState(false);
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
+
+  const showStat = (player) => {
+    return (
+      <div>
+        <div>Name:{player.Name}</div>
+        <div>PPG:{player.PPG}</div>
+        <div>APG:{player.APG}</div>
+        <div>RPG:{player.RPG}</div>
+      </div>
+    );
+  };
 
   const handleHover = (teamLogo, color) => {
     setTeam(teamLogo);
@@ -62,9 +78,11 @@ function App() {
   };
   return (
     <div className={`min-h-screen ${color}`}>
-      <visibleContext.Provider value={{ visible, setVisible }}>
+      <visibleContext.Provider
+        value={{ visible, setVisible, showStat, setSelectedPlayer }}
+      >
         <Navbar />
-        <Display logo={team} icons={icons} />
+        <Display logo={team} icons={icons} selectedPlayer={selectedPlayer} />
         <Icons onHover={handleHover} icons={icons} />
       </visibleContext.Provider>
     </div>

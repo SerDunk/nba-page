@@ -3,15 +3,12 @@ import IconShow from "./IconShow";
 function Icon({ onHover, icons }) {
   const displayIcons = icons.map((item, index) => (
     <IconShow
-      key={index}
+      key={item.id}
       icon={item.icon}
       color={item.color}
       onHover={onHover}
       logo={item.logo}
-      name={item.Name}
-      ppg={item.PPG}
-      apg={item.APG}
-      rpg={item.RPG}
+      player={item}
     />
   ));
   return (

@@ -1,8 +1,7 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import { visibleContext } from "../context/visible";
-function Stats({ icons, onHover }) {
+function Stats() {
   const { visible } = useContext(visibleContext);
-
   if (visible) {
     return (
       <div>
