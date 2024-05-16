@@ -6,6 +6,9 @@ module.exports = {
       height: {
         max: "28rem",
       },
+      fontFamily: {
+        NBA: ["NBA", "roboto"],
+      },
     },
   },
   plugins: [],

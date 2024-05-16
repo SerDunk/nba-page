@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-hover{
+  @apply  hover:text-red-500
+}
+
+@font-face {
+  font-family:"NBA";
+  font-weight: 900;
+  src: url(./fonts/nba-lakers.ttf);
+
+}
+
 
 .transition-transform {
     transition-property: transform;
