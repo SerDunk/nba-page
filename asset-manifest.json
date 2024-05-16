@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nba-page/static/css/main.2cb86b7c.css",
+    "main.js": "/nba-page/static/js/main.0f5334ca.js",
+    "static/media/steph-curry.png": "/nba-page/static/media/steph-curry.e893cddbd3f919e5ccf6.png",
+    "static/media/luka-doncic.png": "/nba-page/static/media/luka-doncic.f4a483a61669ebe88bac.png",
+    "static/media/nikola-jokic.png": "/nba-page/static/media/nikola-jokic.4effa9af4f154aff4433.png",
+    "static/media/nuggets.png": "/nba-page/static/media/nuggets.14e0253eb4649fd04120.png",
+    "static/media/lakers.png": "/nba-page/static/media/lakers.e0e7a90fe486c0808b92.png",
+    "static/media/lebron-james.png": "/nba-page/static/media/lebron-james.84e3f9d2edb8bcae2303.png",
+    "static/media/mavs.png": "/nba-page/static/media/mavs.c4eb2e7d74e9454ff685.png",
+    "static/media/golden-state.png": "/nba-page/static/media/golden-state.c540761d48b03ca9550a.png",
+    "static/media/nba-logo.png": "/nba-page/static/media/nba-logo.ee60cf9f6646dadddb0f.png",
+    "static/media/nba-lakers.ttf": "/nba-page/static/media/nba-lakers.260c10ea6e5a05988b2d.ttf",
+    "index.html": "/nba-page/index.html",
+    "main.2cb86b7c.css.map": "/nba-page/static/css/main.2cb86b7c.css.map",
+    "main.0f5334ca.js.map": "/nba-page/static/js/main.0f5334ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cb86b7c.css",
+    "static/js/main.0f5334ca.js"
+  ]
+}
